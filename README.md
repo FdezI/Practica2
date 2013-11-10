@@ -31,7 +31,7 @@ Por ello, para evitar algunos errores deberemos montar el sistema de directorios
 
 Directorio de procesos:
 ```
-# mount --bind /proc /home/chroots/sid/proc
+# mount -t proc proc /home/chroots/sid/proc
 ```
 
 Si deseáramos utilizar algún dispositivo adicional, así como dispositivos de almacenamiento externo, deberíamos también
