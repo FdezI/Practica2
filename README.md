@@ -14,7 +14,6 @@ El primer pasó será crear el directorio que contendrá nuestro sistema debian:
 
 ```
 # mkdir -p /home/chroots/sid
-
 # debootstrap sid chroots/sid http://ftp.es.debian.org/debian/
 ```
 Para agilizar el procedimiento es recomendable seleccionar un mirror cercano, en este caso uno español (es).
