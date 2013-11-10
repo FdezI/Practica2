@@ -90,7 +90,8 @@ un navegador:
 http://localhost:8080
 ```
 
-WebPy por defecto usa el puerto 8080 para servir el contenido web de nuestro sitio.
+WebPy por defecto usa el puerto 8080 para servir el contenido web de nuestro sitio, aunque puede modificarse rápidamente
+poniendo el puerto al final del comando de ejecución.
 
 
 ## Errores
