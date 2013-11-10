@@ -80,8 +80,11 @@ de dentro de nuestro sistema (visible por él):
 Probamos a ejecutar la aplicación desde el chroot:
 ```
 # chroot /home/chroots/sid
-# python /var/www/aplication.d/app.py
+# cd /var/www/aplication.d/
+# python app.py
 ```
+
+![image](http://imageshack.com/a/img42/2372/3foz.png)
 
 Probamos que efectivamente, se puede acceder a la aplicación ejecutada dentro del chroot desde fuera, para ello, desde
 un navegador:
@@ -89,6 +92,8 @@ un navegador:
 ```
 http://localhost:8080
 ```
+
+![image](http://imageshack.com/a/img842/4603/4z04.png)
 
 WebPy por defecto usa el puerto 8080 para servir el contenido web de nuestro sitio, aunque puede modificarse rápidamente
 poniendo el puerto al final del comando de ejecución.
