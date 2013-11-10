@@ -59,6 +59,8 @@ manual, nos facilita mucho la labor:
 # apt-get install python-webpy
 ```
 
+![image](http://imageshack.com/a/img19/1299/fzuw.png)
+
 Con esto deberíamos tener todo listo para arrancar la aplicación web sin problemas.
 
 ## Ejecutando la aplicación desde el chroot
@@ -83,6 +85,3 @@ http://localhost:8080
 ```
 
 WebPy por defecto usa el puerto 8080 para servir el contenido web de nuestro sitio.
-
-
-![image](http://imageshack.com/a/img19/1299/fzuw.png)
