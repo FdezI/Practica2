@@ -16,6 +16,7 @@ Antes de empezar debemos asegurarnos de tener la aplicación debootstrap, de no 
 # apt-get install debootstrap
 ```
 
+### Preparando directorio principal
 El primer paso será crear el directorio que contendrá nuestro sistema debian:
 
 ```
@@ -24,6 +25,7 @@ El primer paso será crear el directorio que contendrá nuestro sistema debian:
 ```
 Para agilizar el procedimiento es recomendable seleccionar un mirror cercano, en este caso uno español (es).
 
+### Montaje
 De esta forma ya tendremos un sistema para hacer "chroot", aunque con algunas limitaciones que darán error posteriormente.
 Por ello, para evitar algunos errores deberemos montar el sistema de directorios básico del sistema a usar:
 
@@ -114,12 +116,12 @@ Puede ser que, dependiendo del sistema y de la versión de Python, no exista la 
 el tratamiento de imágenes (PIL). Para instalarla:
 
 
-Método 1 (repos):
+####Método 1 (repos):
 ```
 # apt-get install python-webpy
 ```
 
-Método 2 (manual):
+####Método 2 (manual):
 ```
 # cd /usr/local/lib/python2.7/dist-packages/
 # wget http://effbot.org/downloads/Imaging-1.1.7.tar.gz
