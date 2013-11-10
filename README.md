@@ -74,7 +74,7 @@ Con esto deberíamos tener todo listo para arrancar la aplicación web sin probl
 Al estar la aplicación fuera del sistema debian deberemos copiarla a éste. Para ello, desde fuera del chroot copiamos la aplicación a algún directorio
 de dentro de nuestro sistema (visible por él):
 ```
-# cp /home/<username>/aplicacion.d /home/chroots/sid/var/www/aplicacion.d
+# cp /home/<username>/application.d /home/chroots/sid/var/www/application.d
 ```
 
 Probamos a ejecutar la aplicación desde el chroot:

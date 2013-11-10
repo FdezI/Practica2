@@ -1,0 +1,18 @@
+$def with (form, imageFile = "")
+<!DOCTYPE html>
+<HTML lang="es">
+	<HEAD>
+		<META CHARSET="UTF-8">
+		<TITLE>Congreso de Prácticas</TITLE>
+		<META NAME="AUTHOR" CONTENT="Iñaki Fernández">
+		<META NAME="DESCRIPTION" CONTENT="Error para el ejercicio 3 de DAI">
+	</HEAD>
+	<BODY>
+		<form name="main" method="post"> 
+		$if not form.valid: <p class="error">There's an error on the form</p>
+		$:form.render()
+		<input type="submit" />    </form>
+
+		$if imageFile: <img src='$imageFile'></img>
+	</BODY>
+</HTML>
