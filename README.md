@@ -10,6 +10,12 @@ sus dependencias. La máquina anfitriona se encuentra bajo un sistema Ubuntu 12.
 
 ## Instalación del sistema
 
+Antes de empezar debemos asegurarnos de tener la aplicación debootstrap, de no ser así:
+
+```
+# apt-get install debootstrap
+```
+
 El primer paso será crear el directorio que contendrá nuestro sistema debian:
 
 ```
@@ -59,7 +65,7 @@ manual, nos facilita mucho la labor:
 # apt-get install python-webpy
 ```
 
-![image](http://imageshack.com/a/img19/1299/fzuw.png)
+![image](http://imageshack.com/a/img689/6315/vqfs.png)
 
 Con esto deberíamos tener todo listo para arrancar la aplicación web sin problemas.
 
