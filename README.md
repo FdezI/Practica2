@@ -10,7 +10,7 @@ sus dependencias. La máquina anfitriona se encuentra bajo un sistema Ubuntu 12.
 
 ## Instalación del sistema
 
-El primer pasó será crear el directorio que contendrá nuestro sistema debian:
+El primer paso será crear el directorio que contendrá nuestro sistema debian:
 
 ```
 # mkdir -p /home/chroots/sid
