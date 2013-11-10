@@ -91,3 +91,11 @@ http://localhost:8080
 ```
 
 WebPy por defecto usa el puerto 8080 para servir el contenido web de nuestro sitio.
+
+
+## Errores
+
+Es muy común encontrarnos con errores por los paquetes de idioma instalados, para solucionar esta molestia:
+
+# apt-get install locales
+# dpkg-reconfigure locales
