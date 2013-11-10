@@ -85,4 +85,4 @@ http://localhost:8080
 WebPy por defecto usa el puerto 8080 para servir el contenido web de nuestro sitio.
 
 
-![image](http://imageshack.com/i/0jfzuwp)
+![image](http://imageshack.com/a/img19/1299/fzuw.png)
