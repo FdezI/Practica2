@@ -98,5 +98,29 @@ poniendo el puerto al final del comando de ejecución.
 
 Es muy común encontrarnos con errores por los paquetes de idioma instalados, para solucionar esta molestia:
 
+```
 # apt-get install locales
 # dpkg-reconfigure locales
+```
+
+Puede ser que, dependiendo del sistema y de la versión de Python, no exista la librería usada en la aplicación para
+el tratamiento de imágenes (PIL). Para instalarla:
+
+
+Método 1 (repos):
+```
+# apt-get install python-webpy
+```
+
+Método 2 (manual):
+```
+# cd /usr/local/lib/python2.7/dist-packages/
+# wget http://effbot.org/downloads/Imaging-1.1.7.tar.gz
+# tar -xzf  Imaging-1.1.7.tar.gz --strip 1
+# python setup.py install
+```
+
+Con esto estaría instalada la PIL pero seguramente siga soltando errores, los cuales no trataremos en este fichero,
+para más información: http://effbot.org/zone/pil-decoder-jpeg-not-available.htm.
+
+
