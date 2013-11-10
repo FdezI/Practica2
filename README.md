@@ -101,6 +101,7 @@ poniendo el puerto al final del comando de ejecución.
 
 ## Errores
 
+### Idiomas
 Es muy común encontrarnos con errores por los paquetes de idioma instalados, para solucionar esta molestia:
 
 ```
@@ -108,6 +109,7 @@ Es muy común encontrarnos con errores por los paquetes de idioma instalados, pa
 # dpkg-reconfigure locales
 ```
 
+### Librerías
 Puede ser que, dependiendo del sistema y de la versión de Python, no exista la librería usada en la aplicación para
 el tratamiento de imágenes (PIL). Para instalarla:
 
@@ -129,3 +131,9 @@ Con esto estaría instalada la PIL pero seguramente siga soltando errores, los c
 para más información: http://effbot.org/zone/pil-decoder-jpeg-not-available.htm.
 
 
+### Concurrencia en la aplicación
+La aplicación está diseñada para servir al propósito de mostrar una aplicación funcionando, no tiene algunos problemos
+resueltos, tales como que dos usuarios soliciten un fractal al mismo tiempo (el último solicitado machacaría al anterior).
+Esto se resuelve de forma muy sencilla llamando de forma distinta a cada imágen según sus parámetros de creación,
+pero también requiere la creación de un "limpiador de caché", eliminando imágenes cada cierto tiempo según el criterio
+más conveniente para evitar colapsar el almacenamiento y al mismo tiempo mantener un servicio óptimo).
